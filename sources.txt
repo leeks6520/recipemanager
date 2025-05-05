@@ -1,0 +1,7 @@
+backend/src/utils/InputHelper.java
+backend/src/utils/FileManager.java
+backend/src/models/FavoriteRecipe.java
+backend/src/models/Ingredient.java
+backend/src/models/Recipe.java
+backend/src/Main.java
+backend/src/services/RecipeService.java
