@@ -4,7 +4,7 @@
 Recipe Organizer is a Java-based console application that helps users manage their personal recipes. Users can add, view, update, delete, search, and favorite recipes. It also allows generating a shopping list and saving/loading recipes using file-based persistence.
 
 ## Features
-1. **Add Recipe** - Create new recipes with title, ingredients, and instructions.
+1. **Add Recipe** - Create new recipes with a title, ingredients, and instructions.
 2. **View Recipes** - List all recipes with full details.
 3. **Search Recipes** - Search recipes by title.
 4. **Delete Recipe** - Remove a recipe by name.
@@ -21,8 +21,16 @@ Recipe Organizer is a Java-based console application that helps users manage the
 
 
 ## How to Run
-Navigate to `backend/src/` and run using the following commands:
-```bash
-javac models/*.java services/*.java utils/*.java Main.java
-java Main
+
+
+STEPS:
+
+mkdir -p backend/bin
+
+find backend/src -name "*.java" > sources.txt
+
+javac -d backend/bin @sources.txt
+
+java -cp backend/bin Main
+
 
